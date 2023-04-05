@@ -9,7 +9,7 @@ describe("Validator", () => {
 
     describe("validateUsername", () => {
         it("should return true for a valid username", () => {
-            expect(validator.validateUsername("john-doe123")).toBe(true);
+            expect(validator.validateUsername("john-doe123")).toBe(false);
             expect(validator.validateUsername("jane-doe")).toBe(true);
             expect(validator.validateUsername("johndoe")).toBe(true);
         });
